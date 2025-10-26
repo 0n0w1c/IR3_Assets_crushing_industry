@@ -97,206 +97,56 @@ PIPE_COVERS = {
 }
 
 PIPE_PICTURES = {
-    east = {
-        layers = {
-            {
-                draw_as_glow = false,
-                draw_as_light = false,
-                draw_as_shadow = true,
-                filename =
-                "__IndustrialRevolution3Assets2__/graphics/entities/machines/furnaces/furnace-connectors-shadow-east.png",
-                height = 192,
-                priority = "high",
-                scale = 0.5,
-                shift = { -1.5, 0.5 },
-                width = 256,
-                x = 0,
-                y = 0
-            },
-            {
-                draw_as_glow = false,
-                draw_as_light = false,
-                draw_as_shadow = false,
-                filename =
-                "__IndustrialRevolution3Assets2__/graphics/entities/machines/furnaces/furnace-connectors-tint.png",
-                height = 256,
-                priority = "high",
-                scale = 0.5,
-                shift = { -2, 0.5 },
-                tint = { r = 0.125, g = 0.375, b = 0.75, a = 1 },
-                width = 192,
-                x = 0,
-                y = 0
-            },
-            {
-                blend_mode = "additive",
-                draw_as_glow = false,
-                draw_as_light = false,
-                draw_as_shadow = false,
-                filename =
-                "__IndustrialRevolution3Assets2__/graphics/entities/machines/furnaces/furnace-connectors-white.png",
-                height = 256,
-                priority = "high",
-                scale = 0.5,
-                shift = { -2, 0.5 },
-                width = 192,
-                x = 0,
-                y = 0
-            },
-            {
-                draw_as_glow = false,
-                draw_as_light = false,
-                draw_as_shadow = false,
-                filename =
-                "__IndustrialRevolution3Assets2__/graphics/entities/machines/furnaces/furnace-connectors-connector.png",
-                height = 256,
-                priority = "high",
-                scale = 0.5,
-                shift = { -2, 0.5 },
-                width = 192,
-                x = 0,
-                y = 0
-            }
-        }
-    },
     north = {
-        apply_runtime_tint = false,
-        direction_count = 1,
-        draw_as_glow = false,
-        draw_as_light = false,
-        draw_as_shadow = false,
-        filename = "__IndustrialRevolution3Assets3__/graphics/entities/machines/misc/blank.png",
-        height = 1,
-        priority = "high",
-        repeat_count = 1,
+        filename =
+        "__IndustrialRevolution3Assets1__/graphics/entities/machines/assemblers/standard-pipe-pictures-steel-north.png",
+        height = 238,
+        width = 238,
         scale = 0.5,
-        shift = { 0, 0 },
-        width = 1,
-        x = 0,
-        y = 0
+        shift = { 0, 2 },
+        priority = "high",
     },
+
+    east  = {
+        filename =
+        "__IndustrialRevolution3Assets1__/graphics/entities/machines/assemblers/standard-pipe-pictures-steel-east.png",
+        height = 238,
+        width = 238,
+        scale = 0.5,
+        shift = { -2, 0 },
+        priority = "high",
+    },
+
     south = {
         layers = {
             {
-                draw_as_glow = false,
-                draw_as_light = false,
+                filename =
+                "__IndustrialRevolution3Assets1__/graphics/entities/machines/assemblers/standard-pipe-pictures-steel-south.png",
+                height = 238,
+                width = 238,
+                scale = 0.5,
+                shift = { 0, -2 },
+                priority = "high",
+            },
+            {
+                filename = "__IndustrialRevolution3Assets2__/graphics/entities/pipes/pipe-shadow-v.png",
+                height = 120,
+                width = 180,
+                scale = 0.5,
+                shift = { 0, -1 },
+                priority = "high",
                 draw_as_shadow = true,
-                filename =
-                "__IndustrialRevolution3Assets2__/graphics/entities/machines/furnaces/furnace-connectors-shadow-south.png",
-                height = 192,
-                priority = "high",
-                scale = 0.5,
-                shift = { 0.5, -1.5 },
-                width = 256,
-                x = 0,
-                y = 0
-            },
-            {
-                draw_as_glow = false,
-                draw_as_light = false,
-                draw_as_shadow = false,
-                filename =
-                "__IndustrialRevolution3Assets2__/graphics/entities/machines/furnaces/furnace-connectors-tint.png",
-                height = 256,
-                priority = "high",
-                scale = 0.5,
-                shift = { 0, -1.5 },
-                tint = { r = 0, g = 0, b = 0, a = 1 },
-                width = 192,
-                x = 192,
-                y = 0
-            },
-            {
-                blend_mode = "additive",
-                draw_as_glow = false,
-                draw_as_light = false,
-                draw_as_shadow = false,
-                filename =
-                "__IndustrialRevolution3Assets2__/graphics/entities/machines/furnaces/furnace-connectors-white.png",
-                height = 256,
-                priority = "high",
-                scale = 0.5,
-                shift = { 0, -1.5 },
-                width = 192,
-                x = 192,
-                y = 0
-            },
-            {
-                draw_as_glow = false,
-                draw_as_light = false,
-                draw_as_shadow = false,
-                filename =
-                "__IndustrialRevolution3Assets2__/graphics/entities/machines/furnaces/furnace-connectors-connector.png",
-                height = 256,
-                priority = "high",
-                scale = 0.5,
-                shift = { 0, -1.5 },
-                width = 192,
-                x = 192,
-                y = 0
             }
         }
     },
-    west = {
-        layers = {
-            {
-                draw_as_glow = false,
-                draw_as_light = false,
-                draw_as_shadow = true,
-                filename =
-                "__IndustrialRevolution3Assets2__/graphics/entities/machines/furnaces/furnace-connectors-shadow-west.png",
-                height = 192,
-                priority = "high",
-                scale = 0.5,
-                shift = { 2.5, 0.5 },
-                width = 256,
-                x = 0,
-                y = 0
-            },
-            {
-                draw_as_glow = false,
-                draw_as_light = false,
-                draw_as_shadow = false,
-                filename =
-                "__IndustrialRevolution3Assets2__/graphics/entities/machines/furnaces/furnace-connectors-tint.png",
-                height = 256,
-                priority = "high",
-                scale = 0.5,
-                shift = { 2, 0.5 },
-                tint = { r = 0, g = 0, b = 0, a = 1 },
-                width = 192,
-                x = 384,
-                y = 0
-            },
-            {
-                blend_mode = "additive",
-                draw_as_glow = false,
-                draw_as_light = false,
-                draw_as_shadow = false,
-                filename =
-                "__IndustrialRevolution3Assets2__/graphics/entities/machines/furnaces/furnace-connectors-white.png",
-                height = 256,
-                priority = "high",
-                scale = 0.5,
-                shift = { 2, 0.5 },
-                width = 192,
-                x = 384,
-                y = 0
-            },
-            {
-                draw_as_glow = false,
-                draw_as_light = false,
-                draw_as_shadow = false,
-                filename =
-                "__IndustrialRevolution3Assets2__/graphics/entities/machines/furnaces/furnace-connectors-connector.png",
-                height = 256,
-                priority = "high",
-                scale = 0.5,
-                shift = { 2, 0.5 },
-                width = 192,
-                x = 384,
-                y = 0
-            }
-        }
+
+    west  = {
+        filename =
+        "__IndustrialRevolution3Assets1__/graphics/entities/machines/assemblers/standard-pipe-pictures-steel-west.png",
+        height = 238,
+        width = 238,
+        scale = 0.5,
+        shift = { 2, 0 },
+        priority = "high",
     }
 }
