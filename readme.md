@@ -1,6 +1,7 @@
 # IR3 Assets: crushing industry
 
 Adds a mixing machine and reskins [Crushing Industry](https://mods.factorio.com/mod/crushing-industry) using IR3 graphical assets, if installed.  
+*Breaking change: Concrete mix is made in the mixing machine*
 
 *Requires the manual installation of the Industrial Revolution 3 Asset Packs.*
 
