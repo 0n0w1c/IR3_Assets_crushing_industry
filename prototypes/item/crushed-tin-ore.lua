@@ -1,6 +1,8 @@
-if mods["bztin"] then return end
+if mods["bztin"] or mods["bztin2"] then return end
 
-local item_sounds         = require('__base__.prototypes.item_sounds')
+if not data.raw["resource"]["tin-ore"] then return end
+
+local item_sounds         = require("__base__/prototypes/item_sounds")
 
 local item                = {}
 

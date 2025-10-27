@@ -1,4 +1,4 @@
-if mods["bztin"] then return end
+if mods["bztin"] or mods["bztin2"] then return end
 
 if not data.raw["item"]["tin-ore"] then return end
 

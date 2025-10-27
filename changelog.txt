@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.4
+Date: 26.10.2025
+  Bugfixes:
+    - Added some safeguards and code cleanup
+    - Crushed tin and gold recipes were created when the ores were not active
+  Changes:
+    - None
+---------------------------------------------------------------------------------------------------
 Version: 0.0.3
 Date: 26.10.2025
   Bugfixes:
