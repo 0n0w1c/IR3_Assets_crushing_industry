@@ -1,6 +1,7 @@
-if mods["bzgold2"] then return end
+if mods["bzgold"] or mods["bzgold2"] then return end
 
 if not data.raw["resource"]["gold-ore"] then return end
+if not settings.startup["crushing-industry-ore"].value == true then return end
 
 local item_sounds         = require("__base__/prototypes/item_sounds")
 

@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.6
+Date: 27.10.2025
+  Bugfixes:
+    - Removed bundled settings.lua file
+  Changes:
+    - Added more checks to ensure consistency with Crushing Industry startup settings
+---------------------------------------------------------------------------------------------------
 Version: 0.0.5
 Date: 27.10.2025
   Bugfixes:

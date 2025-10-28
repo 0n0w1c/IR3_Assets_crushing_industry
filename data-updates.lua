@@ -27,10 +27,6 @@ require("prototypes/entity/iron-mixer")
 require("prototypes/item/iron-mixer")
 require("prototypes/recipe/iron-mixer")
 
-require("prototypes/recipe/concrete-mix")
-require("prototypes/recipe/crushed-tin-ore")
-require("prototypes/recipe/crushed-gold-ore")
-
 require("prototypes/item/glass")
 require("prototypes/item/sand")
 require("prototypes/item/crushed-coal")
@@ -38,6 +34,10 @@ require("prototypes/item/crushed-copper-ore")
 require("prototypes/item/crushed-iron-ore")
 require("prototypes/item/crushed-tin-ore")
 require("prototypes/item/crushed-gold-ore")
+
+require("prototypes/recipe/concrete-mix")
+require("prototypes/recipe/crushed-tin-ore")
+require("prototypes/recipe/crushed-gold-ore")
 
 local crushing_recipes = {
     { "crushed-coal",       "coal.png" },

@@ -1,6 +1,8 @@
 local item = data.raw["item"]["crushed-coal"]
 if not item then return end
 
+if not settings.startup["crushing-industry-coal"].value == true then return end
+
 item.icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/carbon-crushed.png"
 
 item.pictures = {

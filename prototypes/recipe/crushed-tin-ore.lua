@@ -1,6 +1,7 @@
 if mods["bztin"] or mods["bztin2"] then return end
 
 if not data.raw["item"]["tin-ore"] then return end
+if not settings.startup["crushing-industry-ore"].value == true then return end
 
 local recipe              = {}
 
