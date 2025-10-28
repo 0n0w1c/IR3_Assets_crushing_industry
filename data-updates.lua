@@ -13,13 +13,16 @@ data:extend({
     }
 })
 
+require("prototypes/explosion/electric-crusher-explosion")
 require("prototypes/entity/electric-crusher")
 require("prototypes/item/electric-crusher")
 require("prototypes/technology/ore-crushing")
 
+require("prototypes/explosion/big-crusher-explosion")
 require("prototypes/entity/big-crusher")
 require("prototypes/item/big-crusher")
 
+require("prototypes/explosion/iron-mixer-explosion")
 require("prototypes/entity/iron-mixer")
 require("prototypes/item/iron-mixer")
 require("prototypes/recipe/iron-mixer")

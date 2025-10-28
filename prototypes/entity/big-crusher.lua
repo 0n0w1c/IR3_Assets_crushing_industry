@@ -1,11 +1,124 @@
 local entity = data.raw["assembling-machine"]["big-crusher"]
 if not entity then return end
 
-local SCALE = 4 / 3
+local SCALE                   = 4 / 3
 
-entity.icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/steel-grinder.png"
-entity.integration_patch = nil
-entity.graphics_set = {
+entity.icon                   = "__IndustrialRevolution3Assets1__/graphics/icons/64/steel-grinder.png"
+
+entity.corpse                 = "big-remnants"
+entity.dying_explosion        = "big-crusher-explosion"
+
+entity.damaged_trigger_effect = {
+    {
+        damage_type_filters = {
+            "fire",
+            "impact"
+        },
+        frame_speed = 1,
+        frame_speed_deviation = 0.1,
+        initial_height = 0.5,
+        initial_vertical_speed = 0.07,
+        initial_vertical_speed_deviation = 0.1,
+        offset_deviation = {
+            { -0.5, -0.5 },
+            { 0.5,  0.5 }
+        },
+        particle_name = "copper-particle",
+        probability = 0.10007436929120344,
+        repeat_count = 1,
+        speed_from_center = 0.02,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+    },
+    {
+        damage_type_filters = {
+            "fire",
+            "impact"
+        },
+        frame_speed = 1,
+        frame_speed_deviation = 0.1,
+        initial_height = 0.5,
+        initial_vertical_speed = 0.07,
+        initial_vertical_speed_deviation = 0.1,
+        offset_deviation = {
+            { -0.5, -0.5 },
+            { 0.5,  0.5 }
+        },
+        particle_name = "glass-particle",
+        probability = 0.036612574130928088,
+        repeat_count = 1,
+        speed_from_center = 0.02,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+    },
+    {
+        damage_type_filters = {
+            "fire",
+            "impact"
+        },
+        frame_speed = 1,
+        frame_speed_deviation = 0.1,
+        initial_height = 0.5,
+        initial_vertical_speed = 0.07,
+        initial_vertical_speed_deviation = 0.1,
+        offset_deviation = {
+            { -0.5, -0.5 },
+            { 0.5,  0.5 }
+        },
+        particle_name = "gold-particle",
+        probability = 0.02440838275395206,
+        repeat_count = 1,
+        speed_from_center = 0.02,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+    },
+    {
+        damage_type_filters = {
+            "fire",
+            "impact"
+        },
+        frame_speed = 1,
+        frame_speed_deviation = 0.1,
+        initial_height = 0.5,
+        initial_vertical_speed = 0.07,
+        initial_vertical_speed_deviation = 0.1,
+        offset_deviation = {
+            { -0.5, -0.5 },
+            { 0.5,  0.5 }
+        },
+        particle_name = "steel-particle",
+        probability = 0.36368490303388565,
+        repeat_count = 1,
+        speed_from_center = 0.02,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+    },
+    {
+        damage_type_filters = {
+            "fire",
+            "impact"
+        },
+        frame_speed = 1,
+        frame_speed_deviation = 0.1,
+        initial_height = 0.5,
+        initial_vertical_speed = 0.07,
+        initial_vertical_speed_deviation = 0.1,
+        offset_deviation = {
+            { -0.5, -0.5 },
+            { 0.5,  0.5 }
+        },
+        particle_name = "iron-particle",
+        probability = 0.034171735855532881,
+        repeat_count = 1,
+        speed_from_center = 0.02,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+    }
+}
+
+entity.integration_patch      = nil
+
+entity.graphics_set           = {
     status_colors = STATUS_COLORS,
     animation = {
         layers = {
