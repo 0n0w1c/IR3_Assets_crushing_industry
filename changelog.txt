@@ -1,6 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.8
+Date: 28.10.2025
+  Bugfixes:
+    - Refactored to reskin according to crushing industry's startup settings
+    - Crushed gold and tin recipes are only available when IR3 Assets: resources is active
+  Changes:
+    - None
+---------------------------------------------------------------------------------------------------
 Version: 0.0.7
-Date: 27.10.2025
+Date: 28.10.2025
   Bugfixes:
     - Added check for sand before defining crushed recipes
     - Icon fixups

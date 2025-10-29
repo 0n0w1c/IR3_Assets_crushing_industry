@@ -1,8 +1,4 @@
-if mods["bzgold"] or mods["bzgold2"] then return end
-
 if not (data.raw["item"]["gold-ore"] and data.raw["item"]["sand"] and data.raw["item"]["crushed-gold-ore"]) then return end
-
-if not settings.startup["crushing-industry-ore"].value == true then return end
 
 local recipe              = {}
 
