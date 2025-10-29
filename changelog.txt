@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.7
+Date: 27.10.2025
+  Bugfixes:
+    - Added check for sand before defining crushed recipes
+    - Icon fixups
+    - Crushed gold and tin ore recipes now unlock with research
+    - Reverted the reskin of the Ore crushing technology
+  Changes:
+    - None
+---------------------------------------------------------------------------------------------------
 Version: 0.0.6
 Date: 27.10.2025
   Bugfixes:

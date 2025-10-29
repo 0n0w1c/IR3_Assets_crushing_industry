@@ -16,7 +16,6 @@ data:extend({
 require("prototypes/explosion/electric-crusher-explosion")
 require("prototypes/entity/electric-crusher")
 require("prototypes/item/electric-crusher")
-require("prototypes/technology/ore-crushing")
 
 require("prototypes/explosion/big-crusher-explosion")
 require("prototypes/entity/big-crusher")
@@ -65,5 +64,20 @@ for _, element in ipairs(crushing_recipes) do
                 icon = "__crushing-industry__/graphics/icons/generic-crushing.png"
             },
         }
+
+        if mods["quality"] then
+            local recycling = require("__quality__.prototypes.recycling")
+            recycling.generate_self_recycling_recipe(recipe)
+        end
     end
 end
+
+data.raw["recipe"]["crushed-iron-smelting"].icons = {
+    { icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/iron-crushed.png", shift = { -12, -12 },  scale = 0.4 },
+    { icon = "__base__/graphics/icons/iron-plate.png",                              draw_background = true }
+}
+
+data.raw["recipe"]["crushed-copper-smelting"].icons = {
+    { icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/copper-crushed.png", shift = { -12, -12 },  scale = 0.4 },
+    { icon = "__base__/graphics/icons/copper-plate.png",                              draw_background = true }
+}

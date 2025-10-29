@@ -1,6 +1,7 @@
 if mods["bzgold"] or mods["bzgold2"] then return end
 
-if not data.raw["item"]["gold-ore"] then return end
+if not (data.raw["item"]["gold-ore"] and data.raw["item"]["sand"] and data.raw["item"]["crushed-gold-ore"]) then return end
+
 if not settings.startup["crushing-industry-ore"].value == true then return end
 
 local recipe              = {}
@@ -25,7 +26,7 @@ recipe.auto_recycle       = false
 recipe.energy_required    = 1.2
 
 recipe.icon_size          = 64
-recipe.enabled            = true
+recipe.enabled            = false
 recipe.ingredients        = { { type = "item", name = "gold-ore", amount = 1 } }
 recipe.results            = {
     {
@@ -57,7 +58,18 @@ recipe.main_product       = "crushed-gold-ore"
 
 data:extend({ recipe })
 
+recipe = data.raw["recipe"]["crushed-gold-ore"]
+
 if mods["quality"] then
-    local recycling = require("__quality__.prototypes.recycling")
-    recycling.generate_recycling_recipe(recipe)
+    local recycling = require("__quality__/prototypes/recycling")
+    recycling.generate_self_recycling_recipe(recipe)
 end
+
+local technology = data.raw["technology"]["ore-crushing"]
+local effect =
+{
+    recipe = "crushed-gold-ore",
+    type = "unlock-recipe"
+}
+
+table.insert(technology.effects, effect)
