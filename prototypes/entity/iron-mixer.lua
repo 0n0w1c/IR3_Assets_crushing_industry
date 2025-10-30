@@ -3,7 +3,7 @@ local entity = table.deepcopy(data.raw["assembling-machine"]["assembling-machine
 entity.name = "iron-mixer"
 entity.localised_name = { "entity-name.iron-mixer" }
 entity.icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/iron-mixer.png"
-entity.crafting_categories = { "mixing-with-fluids" }
+entity.crafting_categories = { "mixing-with-fluid" }
 entity.next_upgrade = nil
 entity.integration_patch = nil
 entity.minable = { mining_time = 0.2, result = "iron-mixer" }

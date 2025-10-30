@@ -9,7 +9,7 @@ end
 data:extend({
     {
         type = "recipe-category",
-        name = "mixing-with-fluids"
+        name = "mixing-with-fluid"
     }
 })
 
