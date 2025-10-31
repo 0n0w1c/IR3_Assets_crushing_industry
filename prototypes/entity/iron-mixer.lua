@@ -81,7 +81,7 @@ entity.fluid_boxes =
 {
     {
         production_type = "input",
-        pipe_picture = PIPE_PICTURES,
+        pipe_picture = PIPE_PICTURES_IRON,
         pipe_covers = PIPE_COVERS,
         volume = 1000,
         pipe_connections = { { flow_direction = "input", direction = defines.direction.north, position = { 0, -1 } } },
@@ -89,7 +89,7 @@ entity.fluid_boxes =
     },
     {
         production_type = "output",
-        pipe_picture = PIPE_PICTURES,
+        pipe_picture = PIPE_PICTURES_IRON,
         pipe_covers = PIPE_COVERS,
         volume = 1000,
         pipe_connections = { { flow_direction = "output", direction = defines.direction.south, position = { 0, 1 } } },

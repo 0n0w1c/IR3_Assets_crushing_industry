@@ -96,10 +96,10 @@ PIPE_COVERS = {
     }
 }
 
-PIPE_PICTURES = {
+PIPE_PICTURES_IRON = {
     north = {
         filename =
-        "__IndustrialRevolution3Assets1__/graphics/entities/machines/assemblers/standard-pipe-pictures-steel-north.png",
+        "__IndustrialRevolution3Assets1__/graphics/entities/machines/assemblers/standard-pipe-pictures-iron-north.png",
         height = 238,
         width = 238,
         scale = 0.5,
@@ -109,7 +109,7 @@ PIPE_PICTURES = {
 
     east  = {
         filename =
-        "__IndustrialRevolution3Assets1__/graphics/entities/machines/assemblers/standard-pipe-pictures-steel-east.png",
+        "__IndustrialRevolution3Assets1__/graphics/entities/machines/assemblers/standard-pipe-pictures-iron-east.png",
         height = 238,
         width = 238,
         scale = 0.5,
@@ -121,7 +121,7 @@ PIPE_PICTURES = {
         layers = {
             {
                 filename =
-                "__IndustrialRevolution3Assets1__/graphics/entities/machines/assemblers/standard-pipe-pictures-steel-south.png",
+                "__IndustrialRevolution3Assets1__/graphics/entities/machines/assemblers/standard-pipe-pictures-iron-south.png",
                 height = 238,
                 width = 238,
                 scale = 0.5,
@@ -142,7 +142,7 @@ PIPE_PICTURES = {
 
     west  = {
         filename =
-        "__IndustrialRevolution3Assets1__/graphics/entities/machines/assemblers/standard-pipe-pictures-steel-west.png",
+        "__IndustrialRevolution3Assets1__/graphics/entities/machines/assemblers/standard-pipe-pictures-iron-west.png",
         height = 238,
         width = 238,
         scale = 0.5,
