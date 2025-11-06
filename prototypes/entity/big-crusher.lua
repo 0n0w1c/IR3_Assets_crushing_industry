@@ -1,7 +1,14 @@
 local entity = data.raw["assembling-machine"]["big-crusher"]
 if not entity then return end
 
-local SCALE                   = 4 / 3
+local SCALE = 4 / 3
+
+if settings.startup["IR3-big-crusher-size"].value == "3x3" then
+    entity.collision_box     = { { -1.4, -1.4 }, { 1.4, 1.4 } }
+    entity.selection_box     = { { -1.5, -1.5 }, { 1.5, 1.5 } }
+    entity.circuit_connector = table.deepcopy(data.raw["assembling-machine"]["assembling-machine-2"].circuit_connector)
+    SCALE                    = 3 / 3
+end
 
 entity.icon                   = "__IndustrialRevolution3Assets1__/graphics/icons/64/steel-grinder.png"
 
