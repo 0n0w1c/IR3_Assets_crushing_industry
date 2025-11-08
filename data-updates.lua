@@ -13,6 +13,8 @@ data:extend({
     }
 })
 
+local recipe
+
 require("prototypes/explosion/iron-mixer")
 require("prototypes/entity/iron-mixer")
 require("prototypes/item/iron-mixer")
@@ -22,15 +24,53 @@ require("prototypes/explosion/electric-crusher")
 require("prototypes/entity/electric-crusher")
 require("prototypes/item/electric-crusher")
 
+recipe = data.raw["recipe"]["electric-crusher"]
+if mods["quality"] then
+    local recycling = require("__quality__.prototypes.recycling")
+    recycling.generate_recycling_recipe(recipe)
+end
+
 if settings.startup["crushing-industry-big-crusher"] and settings.startup["crushing-industry-big-crusher"].value == true then
     require("prototypes/explosion/big-crusher")
     require("prototypes/entity/big-crusher")
     require("prototypes/item/big-crusher")
+
+    recipe = data.raw["recipe"]["big-crusher"]
+    if mods["quality"] and recipe then
+        local recycling = require("__quality__/prototypes/recycling")
+
+        recipe.icon = nil
+        recipe.icon_size = nil
+        recipe.icons = {
+            {
+                icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/steel-grinder.png",
+                icon_size = 64,
+            }
+        }
+
+        recycling.generate_self_recycling_recipe(recipe)
+    end
 end
 
 if settings.startup["crushing-industry-glass"] and settings.startup["crushing-industry-glass"].value == true then
-    require("prototypes/item/glass")
     require("prototypes/item/sand")
+    require("prototypes/item/glass")
+
+    recipe = data.raw["recipe"]["glass"]
+    if mods["quality"] and recipe then
+        local recycling = require("__quality__/prototypes/recycling")
+
+        recipe.icon = nil
+        recipe.icon_size = nil
+        recipe.icons = {
+            {
+                icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/glass.png",
+                icon_size = 64,
+            }
+        }
+
+        recycling.generate_self_recycling_recipe(recipe)
+    end
 end
 
 if settings.startup["crushing-industry-coal"] and settings.startup["crushing-industry-coal"].value == true then
@@ -73,7 +113,7 @@ local crushing_recipes = {
 for _, element in ipairs(crushing_recipes) do
     local recipe_name = element[1]
     local filename    = element[2]
-    local recipe      = data.raw["recipe"][recipe_name]
+    recipe            = data.raw["recipe"][recipe_name]
 
     if recipe then
         recipe.icon = nil
