@@ -13,17 +13,17 @@ data:extend({
     }
 })
 
-require("prototypes/explosion/iron-mixer-explosion")
+require("prototypes/explosion/iron-mixer")
 require("prototypes/entity/iron-mixer")
 require("prototypes/item/iron-mixer")
 require("prototypes/recipe/iron-mixer")
 
-require("prototypes/explosion/electric-crusher-explosion")
+require("prototypes/explosion/electric-crusher")
 require("prototypes/entity/electric-crusher")
 require("prototypes/item/electric-crusher")
 
 if settings.startup["crushing-industry-big-crusher"] and settings.startup["crushing-industry-big-crusher"].value == true then
-    require("prototypes/explosion/big-crusher-explosion")
+    require("prototypes/explosion/big-crusher")
     require("prototypes/entity/big-crusher")
     require("prototypes/item/big-crusher")
 end
