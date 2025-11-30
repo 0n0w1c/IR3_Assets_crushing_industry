@@ -1,4 +1,4 @@
-if not data.raw["resource"]["gold-ore"] then return end
+if not data.raw["item"]["gold-ore"] then return end
 
 local item_sounds         = require("__base__/prototypes/item_sounds")
 

@@ -92,6 +92,7 @@ if settings.startup["crushing-industry-ore"] and settings.startup["crushing-indu
         if settings.startup["IR3-gold-ore"] and settings.startup["IR3-gold-ore"].value == true then
             require("prototypes/item/crushed-gold-ore")
             require("prototypes/recipe/crushed-gold-ore")
+            require("prototypes/recipe/crushed-gold-smelting")
         end
     end
 
@@ -99,6 +100,7 @@ if settings.startup["crushing-industry-ore"] and settings.startup["crushing-indu
         if settings.startup["IR3-tin-ore"] and settings.startup["IR3-tin-ore"].value == true then
             require("prototypes/item/crushed-tin-ore")
             require("prototypes/recipe/crushed-tin-ore")
+            require("prototypes/recipe/crushed-tin-smelting")
         end
     end
 end

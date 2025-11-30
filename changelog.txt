@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 29.11.2025
+  Bugfixes:
+    - Refactored crushed ore smelting recipe icons
+  Changes:
+    - Added crushed tin smelting and crushed gold smelting recipes
+---------------------------------------------------------------------------------------------------
 Version: 0.0.13
 Date: 08.11.2025
   Bugfixes:
