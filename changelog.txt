@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 22.12.2025
+  Bugfixes:
+    - Apply Crushing Industry's byproduct startup setting to crushed gold and crushed tin recipes
+  Changes:
+    - None
+---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 29.11.2025
   Bugfixes:

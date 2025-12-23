@@ -1,5 +1,53 @@
 if not (data.raw["item"]["gold-ore"] and data.raw["item"]["sand"] and data.raw["item"]["crushed-gold-ore"]) then return end
 
+local results = {}
+if settings.startup["crushing-industry-byproducts"] and settings.startup["crushing-industry-byproducts"].value then
+    results = {
+        {
+            type = "item",
+            name = "crushed-tin-ore",
+            amount = 1,
+            extra_count_fraction = 0.5,
+        },
+        {
+            type = "item",
+            name = "tin-ore",
+            amount = 1,
+            probability = 0.05,
+            ignored_by_stats = 1,
+            ignored_by_productivity = 1,
+            show_details_in_recipe_tooltip = false,
+        },
+        {
+            type = "item",
+            name = "sand",
+            amount = 1,
+            probability = 0.02,
+            ignored_by_stats = 1,
+            ignored_by_productivity = 1,
+            show_details_in_recipe_tooltip = false,
+        }
+    }
+else
+    results = {
+        {
+            type = "item",
+            name = "crushed-tin-ore",
+            amount = 1,
+            extra_count_fraction = 0.5,
+        },
+        {
+            type = "item",
+            name = "tin-ore",
+            amount = 1,
+            probability = 0.05,
+            ignored_by_stats = 1,
+            ignored_by_productivity = 1,
+            show_details_in_recipe_tooltip = false,
+        }
+    }
+end
+
 local recipe              = {}
 
 recipe.type               = "recipe"
@@ -24,32 +72,7 @@ recipe.energy_required    = 1.2
 recipe.icon_size          = 64
 recipe.enabled            = false
 recipe.ingredients        = { { type = "item", name = "gold-ore", amount = 1 } }
-recipe.results            = {
-    {
-        type = "item",
-        name = "crushed-gold-ore",
-        amount = 1,
-        extra_count_fraction = 0.5,
-    },
-    {
-        type = "item",
-        name = "gold-ore",
-        amount = 1,
-        probability = 0.05,
-        ignored_by_stats = 1,
-        ignored_by_productivity = 1,
-        show_details_in_recipe_tooltip = false,
-    },
-    {
-        type = "item",
-        name = "sand",
-        amount = 1,
-        probability = 0.02,
-        ignored_by_stats = 1,
-        ignored_by_productivity = 1,
-        show_details_in_recipe_tooltip = false,
-    },
-}
+recipe.results            = results
 recipe.main_product       = "crushed-gold-ore"
 
 data:extend({ recipe })
