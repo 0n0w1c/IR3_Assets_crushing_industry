@@ -1,9 +1,9 @@
 {
     "name": "IR3_Assets_crushing_industry",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "title": "IR3 Assets: crushing industry",
     "author": "0n0w1c",
-    "description": "Adds a mixing machine and reskins Crushing Industry using IR3 graphical assets, if installed.\nRequires the manual installation of the Industrial Revolution 3 Asset Packs.",
+    "description": "Optionally adds a mixing machine and reskins Crushing Industry using IR3 graphical assets, if installed.\nRequires the manual installation of the Industrial Revolution 3 Asset Packs.",
     "factorio_version": "2.0",
     "dependencies": [
         "base >= 2.0",

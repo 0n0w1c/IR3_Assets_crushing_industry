@@ -15,10 +15,12 @@ data:extend({
 
 local recipe
 
-require("prototypes/explosion/iron-mixer")
-require("prototypes/entity/iron-mixer")
-require("prototypes/item/iron-mixer")
-require("prototypes/recipe/iron-mixer")
+if settings.startup["IR3-iron-mixer"] and settings.startup["IR3-iron-mixer"].value then
+    require("prototypes/explosion/iron-mixer")
+    require("prototypes/entity/iron-mixer")
+    require("prototypes/item/iron-mixer")
+    require("prototypes/recipe/iron-mixer")
+end
 
 require("prototypes/explosion/electric-crusher")
 require("prototypes/entity/electric-crusher")
@@ -78,7 +80,9 @@ if settings.startup["crushing-industry-coal"] and settings.startup["crushing-ind
 end
 
 if settings.startup["crushing-industry-concrete-mix"] and settings.startup["crushing-industry-concrete-mix"].value == true then
-    require("prototypes/recipe/concrete-mix")
+    if settings.startup["IR3-iron-mixer"] and settings.startup["IR3-iron-mixer"].value then
+        require("prototypes/recipe/concrete-mix")
+    end
 end
 
 if settings.startup["crushing-industry-ore"] and settings.startup["crushing-industry-ore"].value == true then
